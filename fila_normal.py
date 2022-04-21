@@ -2,6 +2,7 @@
 # Flake8 com o comando --select codigo_erro, pode pesquisar por somente um tipo de erro
 # Flake8 com o comando --ignore codigo_erro, pode ignorar por um tipo de erro
 # Você pode pre-configurar o flake8
+# Version Control Hook, ou seja, algo built-in que irá aplicar um padrão na evolução do código
 
 class FilaNormal:
     # type hint
