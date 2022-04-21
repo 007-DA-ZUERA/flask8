@@ -1,0 +1,14 @@
+- Case styles :
+  camelCase
+  PascalCase
+  snake_case
+  kebab-case
+
+  Aprendizado :
+
+  //Part 1
+
+    * Técnicas de Type hints;
+    * Conceitos de PEP-8;
+    * Como criar classes utilizando esses métodos;
+    * A diferença entre uma classe que usa essas técnicas e uma que não usa.
