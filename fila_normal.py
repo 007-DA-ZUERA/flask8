@@ -12,11 +12,13 @@
 # um padrão na evolução do código
 from fila_base import FilaBase
 
+from constantes import CODIGO_NORMAL
+
 
 class FilaNormal(FilaBase):
 
     def gera_senha_atual(self) -> None:
-        self.senha_atual = f'NM{self.codigo}'
+        self.senha_atual = f'{CODIGO_NORMAL}{self.codigo}'
 
     # type hint, retorna string
     def chama_cliente(self, caixa: int) -> str:

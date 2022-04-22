@@ -2,13 +2,17 @@
 # com letra maiuscula
 
 # Funções e variaveis devem usar somente letras minusculas e "_" espaços snake
+
+# Constantes devem ser palavras maiusculas separadas por "_"
 from fila_base import FilaBase
+
+from constantes import CODIGO_PRIORITARIO
 
 
 class FilaPrioritaria(FilaBase):
 
     def gera_senha_atual(self):
-        self.senha_atual = f'PR{self.codigo}'
+        self.senha_atual = f'{CODIGO_PRIORITARIO}{self.codigo}'
     # Padrão Pep-8 ~~Uma linha de espaçamento entre métodos e funções
 
     def chama_cliente(self, caixa: int) -> str:

@@ -1,6 +1,8 @@
 # Criando classe abstrata
 import abc
 
+from constantes import TAMANHO_PADRAO_MAXIMO, TAMANHO_PADRAO_MINIMO
+
 
 class FilaBase(metaclass=abc.ABCMeta):
     # type hint
@@ -12,8 +14,8 @@ class FilaBase(metaclass=abc.ABCMeta):
 
     # type hint, não retorna nada
     def reseta_fila(self) -> None:
-        if self.codigo >= 200:
-            self.codigo = 0
+        if self.codigo >= TAMANHO_PADRAO_MAXIMO:
+            self.codigo = TAMANHO_PADRAO_MINIMO
         else:
             self.codigo += 1
 

@@ -20,3 +20,9 @@
     * Como instalar e configurar o Flake8;
     * Como alertar erros de estilo no commit;
     * Como bloquear um commit que tenha problemas de estilo de código.
+
+  //Part 3
+
+    * Novas regras do PEP-8;
+    * O que é uma classe abstrata;
+    * O que é um Template Method.
