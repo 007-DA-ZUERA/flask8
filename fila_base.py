@@ -1,4 +1,8 @@
-class FilaBase:
+# Criando classe abstrata
+import abc
+
+
+class FilaBase(metaclass=abc.ABCMeta):
     # type hint
     codigo: int = 0
     fila = []
@@ -12,3 +16,21 @@ class FilaBase:
             self.codigo = 0
         else:
             self.codigo += 1
+
+    def insere_cliente(self):
+        self.fila.append(self.senha_atual)
+
+    # Métodos abstratos forçam as classes filhas a criarem esses métodos
+    @abc.abstractmethod
+    def gera_senha_atual(self):
+        pass
+
+    # type hint, não retorna nada
+    def atualiza_fila(self) -> None:
+        self.reseta_fila()
+        self.gera_senha_atual()
+        self.insere_cliente()
+
+    @abc.abstractmethod
+    def chama_cliente(self, caixa: int):
+        pass

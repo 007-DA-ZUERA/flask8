@@ -16,17 +16,11 @@ from fila_base import FilaBase
 class FilaNormal(FilaBase):
 
     def gera_senha_atual(self) -> None:
-        self.senhatual = f'NM{self.codigo}'
-
-    # type hint, não retorna nada
-    def atualiza_fila(self) -> None:
-        self.reseta_fila()
-        self.gera_senha_atual()
-        self.fila.append(self.senhatual)
+        self.senha_atual = f'NM{self.codigo}'
 
     # type hint, retorna string
-    def chamacliente(self, caixa: int) -> str:
+    def chama_cliente(self, caixa: int) -> str:
         # .pop() retorna o valor
         cliente_atual = self.fila.pop(0)
         self.clientes_atendidos.append(cliente_atual)
-        return(f'Cliente atual: {cliente_atual}, dirija-se ao caixa: {caixa}')
+        return f'Cliente atual: {cliente_atual}, dirija-se ao caixa: {caixa}'
