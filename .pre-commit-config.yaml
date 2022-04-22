@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pycqa/flake8
-    rev: ''
+    rev: '4.0.1'
     hooks:
       - id: flake8
         additional_dependencies: [flake8-docstrings]
