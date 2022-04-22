@@ -26,3 +26,9 @@
     * Novas regras do PEP-8;
     * O que é uma classe abstrata;
     * O que é um Template Method.
+
+  //Part 4
+
+    * Sobre o padrão de projeto Factory;
+    * Como trabalhar com constantes seguindo o PEP-8;
+    * Mais técnicas de Type Hints.
