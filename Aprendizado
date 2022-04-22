@@ -12,3 +12,11 @@
     * Conceitos de PEP-8;
     * Como criar classes utilizando esses métodos;
     * A diferença entre uma classe que usa essas técnicas e uma que não usa.
+
+  //Part 2
+
+    * Como instalar e usar o MyPy;
+    * A criar um projeto no GitHub;
+    * Como instalar e configurar o Flake8;
+    * Como alertar erros de estilo no commit;
+    * Como bloquear um commit que tenha problemas de estilo de código.
